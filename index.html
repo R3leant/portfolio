@@ -6,7 +6,7 @@
   <title>Daniel Damota Maldonado · Ciberseguridad Ofensiva y Bastionado</title>
   <meta name="description" content="Portfolio de Daniel Damota Maldonado, especialista en ciberseguridad ofensiva y bastionado de redes y sistemas: pentesting, análisis de vulnerabilidades y hardening según CIS Benchmark. Creador del canal de YouTube R3leant.">
   <meta name="author" content="Daniel Damota Maldonado">
-  <meta name="theme-color" content="#0A121B">
+  <meta name="theme-color" content="#08080A">
 
   <!-- Open Graph: vista previa al compartir el enlace -->
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -71,9 +71,13 @@
     <section class="hero" id="inicio">
       <div class="container hero__grid">
         <div class="hero__text">
-          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Especialista en ciberseguridad</p>
+          <p class="eyebrow">Especialista en ciberseguridad</p>
           <h1 class="hero__title">Daniel Damota<br><span>Maldonado</span></h1>
-          <p class="hero__role"><span>Ciberseguridad Ofensiva</span><span>Bastionado de Redes y Sistemas</span></p>
+          <ol class="index-list hero__role">
+            <li>Ciberseguridad Ofensiva</li>
+            <li>Bastionado de Redes</li>
+            <li>Bastionado de Sistemas</li>
+          </ol>
           <p class="hero__lead">
             Audito redes y sistemas con pentesting para encontrar sus vulnerabilidades, y
             después los bastiono para cerrarlas. Cada auditoría termina en un informe técnico
@@ -91,15 +95,13 @@
 
         <figure class="hero__photo">
           <div class="photo">
-            <span class="photo__scan" aria-hidden="true"></span>
+            <span class="photo__orbit" aria-hidden="true"></span>
+            <span class="photo__ring" aria-hidden="true"></span>
             <div class="photo__frame">
               <img src="assets/img/daniel-damota.webp" width="960" height="960"
                    alt="Retrato de Daniel Damota Maldonado">
             </div>
-            <span class="corner corner--tl" aria-hidden="true"></span>
-            <span class="corner corner--tr" aria-hidden="true"></span>
-            <span class="corner corner--bl" aria-hidden="true"></span>
-            <span class="corner corner--br" aria-hidden="true"></span>
+            <span class="photo__ticks" aria-hidden="true"></span>
           </div>
           <figcaption class="photo__tags">
             <span class="badge badge--accent">CRTA certificado</span>
@@ -171,7 +173,7 @@
           </div>
         </div>
 
-        <div class="cve__card">
+        <div class="cve__card brackets">
           <div class="cve__score">
             <span class="cve__num"><span class="count count--dec count--view" style="--to: 87"><span class="count__txt">8,7</span></span></span>
             <span class="cve__label">CVSS v4<br><b>Severidad alta</b></span>
@@ -286,18 +288,33 @@
 
         <div class="projects">
           <a class="yt-card" href="https://www.youtube.com/@R3leant" target="_blank" rel="noopener">
-            <div class="yt-card__screen" aria-hidden="true">
-              <span class="yt-card__play">
-                <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+            <div class="yt-card__screen brackets" aria-hidden="true">
+              <div class="yt-card__brand">
+                <span class="yt-card__by">By Daniel Damota</span>
+                <span class="yt-card__logo">R3leant</span>
+                <span class="yt-card__tagline">Ciberseguridad y sistemas en español</span>
+              </div>
+              <span class="yt-card__target">
+                <svg viewBox="0 0 100 100">
+                  <circle class="orbit" cx="50" cy="50" r="48"/>
+                  <circle cx="50" cy="50" r="30"/>
+                  <path d="M50 8v18M50 74v18M8 50h18M74 50h18"/>
+                  <circle class="pulse" cx="50" cy="50" r="2.2"/>
+                  <circle class="core" cx="50" cy="50" r="2.2"/>
+                </svg>
               </span>
-              <code class="yt-card__prompt">r3leant@lab:~$ <span>./ciberseguridad</span></code>
             </div>
             <div class="yt-card__body">
-              <p class="yt-card__kicker">Canal de YouTube</p>
-              <h3>R3leant</h3>
+              <p class="yt-card__kicker">Canal de YouTube · R3leant</p>
+              <h3>Divulgación IT en español, de la teoría al laboratorio</h3>
+              <ol class="index-list yt-card__topics">
+                <li>Sistemas</li>
+                <li>Ciberseguridad</li>
+                <li>Hacking Ético</li>
+              </ol>
               <p>Vídeos divulgativos sobre ciberseguridad y sistemas: hacking ético, bastionado, laboratorios y herramientas.</p>
               <span class="yt-card__cta">
-                Visitar el canal
+                Visitar R3leant
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
               </span>
             </div>
