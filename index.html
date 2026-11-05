@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Damota Maldonado · Ciberseguridad Ofensiva y Bastionado</title>
+  <meta name="description" content="Portfolio de Daniel Damota Maldonado, especialista en ciberseguridad ofensiva y bastionado de redes y sistemas: pentesting, análisis de vulnerabilidades y hardening según CIS Benchmark. Creador del canal de YouTube R3leant.">
+  <meta name="author" content="Daniel Damota Maldonado">
+  <meta name="theme-color" content="#0A121B">
+
+  <!-- Open Graph: vista previa al compartir el enlace -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Damota Maldonado · Ciberseguridad Ofensiva y Bastionado">
+  <meta property="og:description" content="Ciberseguridad ofensiva y bastionado de redes y sistemas. Canal de YouTube R3leant.">
+  <meta property="og:image" content="assets/img/daniel-damota.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#inicio" aria-label="Inicio">
+        <span class="logo__mark">DD</span>
+        <span class="logo__text">Daniel Damota</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#cve">CVE</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacion">Formación</a>
+        <a href="#youtube">YouTube</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary btn--sm" href="#contacto">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+          <span>Contacto</span>
+        </a>
+
+        <!-- Menú móvil sin JavaScript -->
+        <details class="menu">
+          <summary aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </summary>
+          <nav class="menu__panel" aria-label="Navegación móvil">
+            <a href="#experiencia">Experiencia</a>
+            <a href="#cve">CVE</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacion">Formación</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Especialista en ciberseguridad</p>
+          <h1 class="hero__title">Daniel Damota<br><span>Maldonado</span></h1>
+          <p class="hero__role"><span>Ciberseguridad Ofensiva</span><span>Bastionado de Redes y Sistemas</span></p>
+          <p class="hero__lead">
+            Audito redes y sistemas con pentesting para encontrar sus vulnerabilidades, y
+            después los bastiono para cerrarlas. Cada auditoría termina en un informe técnico
+            con la remediación de cada hallazgo. Comparto lo que aprendo en mi canal de
+            YouTube <strong>R3leant</strong>.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contacto">Contactar</a>
+            <a class="btn btn--ghost" href="https://www.youtube.com/@R3leant" target="_blank" rel="noopener">
+              <svg class="icon icon--yt" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-4.8.5-4.8s0-3.2-.5-4.8ZM9.7 15.1V8.9l5.8 3.1-5.8 3.1Z"/></svg>
+              Ver canal R3leant
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero__photo">
+          <div class="photo">
+            <span class="photo__scan" aria-hidden="true"></span>
+            <div class="photo__frame">
+              <img src="assets/img/daniel-damota.webp" width="960" height="960"
+                   alt="Retrato de Daniel Damota Maldonado">
+            </div>
+            <span class="corner corner--tl" aria-hidden="true"></span>
+            <span class="corner corner--tr" aria-hidden="true"></span>
+            <span class="corner corner--bl" aria-hidden="true"></span>
+            <span class="corner corner--br" aria-hidden="true"></span>
+          </div>
+          <figcaption class="photo__tags">
+            <span class="badge badge--accent">CRTA certificado</span>
+            <span class="badge">CVE-2026-2464</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Cifras clave -->
+      <div class="container">
+        <dl class="stats">
+          <div class="stat"><dt>Pymes auditadas <span>Kit Consulting &amp; Pyme Cibersegura</span></dt><dd><span class="count" style="--to: 44"><span class="count__txt">44</span></span></dd></div>
+          <div class="stat"><dt>De las auditorías aprobadas <span>Red.es y Cámara de Comercio de España</span></dt><dd><span class="count" style="--to: 100"><span class="count__txt">100</span></span>&nbsp;%</dd></div>
+          <div class="stat"><dt>Clientes gestionados <span>Administración de EDR y copias en la nube</span></dt><dd>+<span class="count" style="--to: 30"><span class="count__txt">30</span></span></dd></div>
+          <div class="stat"><dt>CVE propio <span>CVE-2026-2464 · CVSS v4</span></dt><dd><span class="count count--dec" style="--to: 87"><span class="count__txt">8,7</span></span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Experiencia</p>
+          <h2 class="section__title">Ataque y bastionado en proyectos reales</h2>
+        </header>
+
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__date">Mar 2025 – Jun 2026</p>
+            <p class="job__company">Soporttec SL</p>
+          </div>
+          <div class="job__body">
+            <h3 class="job__title">Especialista en Ciberseguridad / Pentester</h3>
+            <ul class="checklist">
+              <li><strong>44 Pymes auditadas</strong> con pentesting de redes internas (Kit Consulting &amp; Pyme Cibersegura), con el <strong>100&nbsp;% de las auditorías aprobadas</strong> por Red.es y la Cámara de Comercio de España.</li>
+              <li>Informes técnicos con hallazgos y recomendaciones de remediación para cada cliente.</li>
+              <li>Bastionado de sistemas Windows según <strong>CIS Benchmark</strong> y documentación de seguridad para <strong>ISO 27001</strong>.</li>
+              <li>Administración del EDR Panda Adaptive Defense 360 y de las copias en la nube con Acronis de <strong>más de 30 clientes</strong>.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CVE ============ -->
+    <section class="section section--alt" id="cve">
+      <div class="container cve">
+        <div class="cve__intro">
+          <p class="section__kicker">Divulgación responsable</p>
+          <h2 class="cve__id">CVE-2026-2464</h2>
+          <p class="cve__product">Path Traversal en AMR Printer Management 1.01 Beta</p>
+          <p class="cve__text">
+            El servicio web de administración no validaba las rutas que recibía. Un atacante
+            remoto, <strong>sin autenticarse</strong>, podía enviar peticiones con secuencias
+            <code>../</code> para salir del directorio permitido y <strong>leer cualquier archivo
+            del sistema Windows</strong>. Como el servicio se ejecuta con privilegios elevados,
+            quedaban expuestos también los archivos sensibles del sistema.
+          </p>
+          <p class="cve__text">
+            Lo notifiqué a <strong>INCIBE</strong> mediante divulgación responsable y el aviso se
+            publicó en febrero de 2026. El fabricante indica que ya lo ha corregido.
+          </p>
+          <div class="cve__links">
+            <a href="https://www.incibe.es/index.php/en/incibe-cert/notices/aviso/directory-traversal-amr-printer-management-amr" target="_blank" rel="noopener">Aviso de INCIBE
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2464" target="_blank" rel="noopener">Ficha en NVD
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          </div>
+        </div>
+
+        <div class="cve__card">
+          <div class="cve__score">
+            <span class="cve__num"><span class="count count--dec count--view" style="--to: 87"><span class="count__txt">8,7</span></span></span>
+            <span class="cve__label">CVSS v4<br><b>Severidad alta</b></span>
+          </div>
+          <div class="severity" role="img" aria-label="Puntuación 8,7 sobre 10, dentro de la banda alta (7,0 a 8,9)">
+            <div class="severity__bar">
+              <span class="sev sev--low"></span>
+              <span class="sev sev--med"></span>
+              <span class="sev sev--high"></span>
+              <span class="sev sev--crit"></span>
+              <span class="severity__pin" style="--pos: 87%"></span>
+            </div>
+            <div class="severity__labels" aria-hidden="true">
+              <span>Baja</span><span>Media</span><span class="is-on">Alta</span><span>Crítica</span>
+            </div>
+          </div>
+
+          <dl class="cve__facts">
+            <div><dt>Tipo</dt><dd>CWE-22 · Path Traversal</dd></div>
+            <div><dt>Acceso</dt><dd>Red · sin autenticación</dd></div>
+            <div><dt>Impacto</dt><dd>Lectura de archivos del sistema</dd></div>
+            <div><dt>Publicado</dt><dd>18 feb 2026 · INCIBE</dd></div>
+          </dl>
+          <p class="cve__vector">CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Habilidades</p>
+          <h2 class="section__title">Con qué trabajo</h2>
+        </header>
+
+        <div class="skills">
+          <article class="skill">
+            <svg class="skill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5"/></svg>
+            <h3>Ciberseguridad ofensiva</h3>
+            <p>Pentesting de redes empresariales y aplicaciones web, análisis de vulnerabilidades, explotación y movimiento lateral.</p>
+            <ul class="tags"><li>Kali Linux</li><li>Nessus</li><li>OpenVAS</li><li>OWASP</li><li>MITRE ATT&amp;CK</li></ul>
+          </article>
+          <article class="skill">
+            <svg class="skill__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg>
+            <h3>Bastionado de sistemas</h3>
+            <p>Hardening de sistemas Windows y Windows Server según CIS Benchmark, con la documentación de seguridad para ISO 27001.</p>
+            <ul class="tags"><li>CIS Benchmark</li><li>Windows Server</li><li>Linux</li><li>ISO 27001</li></ul>
+          </article>
+          <article class="skill">
+            <svg class="skill__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+            <h3>Bastionado de redes</h3>
+            <p>Protección del perímetro con firewalls, de los equipos con EDR y de los datos con copias en la nube, alineada con NIS2 y ENS.</p>
+            <ul class="tags"><li>Sophos XGS</li><li>pfSense</li><li>Panda AD360</li><li>Acronis</li><li>NIS2</li><li>ENS</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMACIÓN ============ -->
+    <section class="section section--alt" id="formacion">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Formación</p>
+          <h2 class="section__title">Exámenes prácticos, no solo teoría</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__date">Dic 2025</span>
+            <div>
+              <h3>Certified Red Team Analyst (CRTA)</h3>
+              <p>CyberWarfare Labs · Examen práctico de 6 horas: explotación de redes corporativas y movimiento lateral.</p>
+            </div>
+            <span class="badge badge--accent">Obtenida</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">2026</span>
+            <div>
+              <h3>Certified Penetration Testing Specialist (CPTS)</h3>
+              <p>Hack The Box · Examen práctico de 10 días con informe profesional.</p>
+            </div>
+            <span class="badge">En curso</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">2026 – 2027</span>
+            <div>
+              <h3>Especialización en Ciberseguridad (CETI)</h3>
+              <p>Curso de Especialización en Ciberseguridad en Entornos de las TI.</p>
+            </div>
+            <span class="badge">En curso</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">2023 – 2025</span>
+            <div>
+              <h3>Técnico Superior en ASIR</h3>
+              <p>Administración de Sistemas Informáticos en Red · Nota media 8,7.</p>
+            </div>
+            <span class="badge badge--accent">Titulado</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ YOUTUBE Y PROYECTOS ============ -->
+    <section class="section" id="youtube">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Divulgación y proyectos</p>
+          <h2 class="section__title">Aprendo, practico y lo comparto</h2>
+        </header>
+
+        <div class="projects">
+          <a class="yt-card" href="https://www.youtube.com/@R3leant" target="_blank" rel="noopener">
+            <div class="yt-card__screen" aria-hidden="true">
+              <span class="yt-card__play">
+                <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+              </span>
+              <code class="yt-card__prompt">r3leant@lab:~$ <span>./ciberseguridad</span></code>
+            </div>
+            <div class="yt-card__body">
+              <p class="yt-card__kicker">Canal de YouTube</p>
+              <h3>R3leant</h3>
+              <p>Vídeos divulgativos sobre ciberseguridad y sistemas: hacking ético, bastionado, laboratorios y herramientas.</p>
+              <span class="yt-card__cta">
+                Visitar el canal
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <div class="project-list">
+            <article class="project">
+              <p class="project__kicker">Laboratorio</p>
+              <h3>Homelab de pentesting</h3>
+              <p>Servidor HPE ProLiant DL380p Gen8 con Proxmox VE para virtualizar máquinas vulnerables y practicar ataques en un entorno controlado.</p>
+            </article>
+            <article class="project">
+              <p class="project__kicker">Proyecto final de ASIR</p>
+              <h3>Ataque y bastionado de una red Windows</h3>
+              <p>Compromiso de un entorno Windows Server 2022 y posterior bastionado para cerrar cada vía de ataque.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--contact" id="contacto">
+      <div class="container contact">
+        <div>
+          <p class="section__kicker">Contacto</p>
+          <h2 class="contact__title">¿Hablamos de la seguridad de tu infraestructura?</h2>
+          <p class="contact__text">Disponible para proyectos de ciberseguridad ofensiva y bastionado de redes y sistemas.</p>
+        </div>
+
+        <ul class="contact__links">
+          <li>
+            <a href="mailto:r3leant@proton.me">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+              <span><small>Correo</small>r3leant@proton.me</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/r3leant" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-7M11 13.5c0-2 1.2-3.5 3-3.5s3 1.2 3 3.5V17"/></svg>
+              <span><small>LinkedIn</small>linkedin.com/in/r3leant</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@R3leant" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></svg>
+              <span><small>YouTube</small>youtube.com/@R3leant</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Daniel Damota Maldonado</p>
+      <p class="footer__mono">Ciberseguridad ofensiva · Bastionado · <a href="https://www.youtube.com/@R3leant" target="_blank" rel="noopener">R3leant</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
