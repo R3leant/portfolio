@@ -69,10 +69,11 @@
 
     <!-- ============ PORTADA ============ -->
     <section class="hero" id="inicio">
+      <div class="hero__floor" aria-hidden="true"></div>
       <div class="container hero__grid">
         <div class="hero__text">
           <p class="eyebrow">Especialista en ciberseguridad</p>
-          <h1 class="hero__title">Daniel Damota<br><span>Maldonado</span></h1>
+          <h1 class="hero__title"><span class="hero__line">Daniel Damota</span> <span class="hero__line hero__line--muted">Maldonado</span></h1>
           <ol class="index-list hero__role">
             <li>Ciberseguridad Ofensiva</li>
             <li>Bastionado de Redes</li>
@@ -94,14 +95,20 @@
         </div>
 
         <figure class="hero__photo">
-          <div class="photo">
-            <span class="photo__orbit" aria-hidden="true"></span>
-            <span class="photo__ring" aria-hidden="true"></span>
-            <div class="photo__frame">
-              <img src="assets/img/daniel-damota.webp" width="960" height="960"
-                   alt="Retrato de Daniel Damota Maldonado">
+          <div class="photo-stage">
+            <div class="photo">
+              <span class="photo__orbit" aria-hidden="true"></span>
+              <span class="photo__ring" aria-hidden="true"></span>
+              <span class="photo__gimbal photo__gimbal--a" aria-hidden="true"></span>
+              <span class="photo__gimbal photo__gimbal--b" aria-hidden="true"></span>
+              <div class="photo__frame">
+                <img src="assets/img/daniel-damota.webp" width="960" height="960"
+                     alt="Retrato de Daniel Damota Maldonado">
+              </div>
+              <span class="photo__ticks" aria-hidden="true"></span>
             </div>
-            <span class="photo__ticks" aria-hidden="true"></span>
+            <!-- Zonas invisibles que inclinan la foto en 3D al pasar el ratón (sin JavaScript) -->
+            <div class="tilt" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
           </div>
           <figcaption class="photo__tags">
             <span class="badge badge--accent">CRTA certificado</span>
@@ -302,6 +309,7 @@
                   <circle class="pulse" cx="50" cy="50" r="2.2"/>
                   <circle class="core" cx="50" cy="50" r="2.2"/>
                 </svg>
+                <span class="yt-card__gyro"><i></i><i></i></span>
               </span>
             </div>
             <div class="yt-card__body">
