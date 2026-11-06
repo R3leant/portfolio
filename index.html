@@ -14,7 +14,7 @@
   <meta property="og:description" content="Ciberseguridad ofensiva y bastionado de redes y sistemas. Canal de YouTube R3leant.">
   <meta property="og:image" content="assets/img/daniel-damota.png">
 
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/r3leant-logo.jpg" type="image/jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
   <header class="header">
     <div class="container header__inner">
       <a class="logo" href="#inicio" aria-label="Inicio">
-        <span class="logo__mark">DD</span>
+        <img class="logo__mark" src="assets/img/r3leant-logo.jpg" width="36" height="36" alt="">
         <span class="logo__text">Daniel Damota</span>
       </a>
 
@@ -309,6 +309,7 @@
                   <circle class="pulse" cx="50" cy="50" r="2.2"/>
                   <circle class="core" cx="50" cy="50" r="2.2"/>
                 </svg>
+                <img class="yt-card__mark" src="assets/img/r3leant-logo.jpg" width="300" height="300" alt="" loading="lazy">
                 <span class="yt-card__gyro"><i></i><i></i></span>
               </span>
             </div>
@@ -329,16 +330,21 @@
           </a>
 
           <div class="project-list">
-            <article class="project">
+            <a class="project" href="https://github.com/R3leant/vulnhub2proxmox/" target="_blank" rel="noopener">
               <p class="project__kicker">Laboratorio</p>
               <h3>Homelab de pentesting</h3>
               <p>Servidor HPE ProLiant DL380p Gen8 con Proxmox VE para virtualizar máquinas vulnerables y practicar ataques en un entorno controlado.</p>
-            </article>
-            <article class="project">
+              <p>Además creé <strong>vulnhub2proxmox</strong>, una herramienta que importa máquinas de VulnHub a Proxmox para montar el laboratorio sin hacerlo a mano.</p>
+              <span class="project__link">Ver herramienta en GitHub
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+            <a class="project" href="https://github.com/R3leant/Proyecto_ASIR/blob/main/Proyecto_ASIR.pdf" target="_blank" rel="noopener">
               <p class="project__kicker">Proyecto final de ASIR</p>
               <h3>Ataque y bastionado de una red Windows</h3>
               <p>Compromiso de un entorno Windows Server 2022 y posterior bastionado para cerrar cada vía de ataque.</p>
-            </article>
+              <span class="project__link">Leer el proyecto (PDF)
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
           </div>
         </div>
       </div>
